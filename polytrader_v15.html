@@ -1,1 +1,65 @@
-<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PolyTrader v14</title><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@400;500;700&display=swap" rel="stylesheet"><style>:root{--bg:#080c10;--surface:#0f1318;--card:#151b22;--border:#1e2730;--border2:#2a3540;--green:#00e5a0;--red:#ff4d6d;--blue:#3d9eff;--amber:#f5a623;--purple:#a78bfa;--cyan:#22d3ee;--pizza:#ff6b35;--pizza2:#ffd23f;--text:#e8f0f8;--muted:#5a7080;--muted2:#3d5060;--font:'Syne',sans-serif;--mono:'DM Mono',monospace;}*{box-sizing:border-box;margin:0;padding:0}body{background:var(--bg);color:var(--text);font-family:var(--font);min-height:100vh;display:flex;justify-content:center;padding:12px}.phone{width:100%;max-width:430px;background:var(--surface);border-radius:24px;border:1px solid var(--border);overflow:hidden;box-shadow:0 0 80px rgba(255,107,53,.04),0 30px 80px rgba(0,0,0,.6)}</style></head><body><div class="phone"><!-- TOPBAR --><div class="topbar"><div class="logo-wrap"><div class="logo-dot"></div><span class="logo">PolyTrader</span></div></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolyTrader v15</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to PolyTrader v15</h1>
+    </header>
+    <main>
+        <div id="market-data">
+            <!-- Market data will be dynamically loaded here -->
+        </div>
+        <div id="bot-controls">
+            <button id="start-bot">Start Bot</button>
+            <button id="stop-bot">Stop Bot</button>
+        </div>
+        <div id="modal">
+            <h2>Bot Settings</h2>
+            <!-- Modal content for settings -->
+        </div>
+    </main>
+    <footer>
+        <p>Powered by PolyTrader</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+/* Styles for PolyTrader */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#market-data {
+    margin: 20px;
+}
+
+#bot-controls {
+    text-align: center;
+    margin: 20px;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
