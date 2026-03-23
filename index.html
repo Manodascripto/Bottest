@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!--
+Victory HTML CSS Template
+https://templatemo.com/tm-507-victory
+-->
+        <title>Erva Santa</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Add icon library link from Font Awesome 
+		 background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+		-->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+		<style>
+        /* 2. Style the link to look like a button */
+        .instagram-btn {
+            display: inline-flex;		
+			padding: 10px 20px;
+            align-items: center;
+            color: white;   
+            border-radius: 8px;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+
+        .instagram-btn i {
+            margin-right: 10px;
+            font-size: 20px;
+        }
+
+        .instagram-btn:hover {
+            transform: scale(1.05); /* Slight pop on hover */
+        }
+    </style>
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="./web/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./web/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="./web/css/fontAwesome.css">
+        <link rel="stylesheet" href="./web/css/hero-slider.css">
+        <link rel="stylesheet" href="./web/css/owl-carousel.css">
+        <link rel="stylesheet" href="./web/css/templatemo-style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Spectral:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+
+        <script src="./web/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+<body>
+  <!--  <div class="header">
+        <div class="container">
+            <a href="#" class="navbar-brand scroll-top">Erva Santa</a>
+            
+        </div>
+        /.container
+    </div>-->
+   
+
+
+    <section class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h2>Loteamento Lodge</h2>
+                    <p>Terrenos ecofriendly</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="lunch-menu1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="lunch-menu-content">
+                        <div class="row">	
+							<p> <br> </p>
+							<p> <br> </p>
+							<p> <br> </p>
+                            <div class="col-md-5">
+							<h2>Hidrolatos</h2>
+                                <div class="left-image">
+                                    <img src="img/galletaMantequilla_inicial.jpg" alt="">
+									<p> <br> </p>
+									<p> <br> </p>
+									<p> <br> </p>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+								
+								<div id="owl-lunch1" class="owl-carousel owl-theme">
+                                    <div class="item col-md-12">
+										<div class="food-item">
+											<a href="../ar1/index31.html" onclick="return newWindow31()">
+												<img src="img/galletaMantequilla_ar.jpg" alt="">
+											</a>
+											<div class="text-content">
+												<h4>Experiencia con AR</h4>
+												<p>Asegurate de tener buenas condiciones de luz</p>
+											</div>			
+										</div>
+                                    </div>
+                                    <div class="item col-md-12">
+										<div class="food-item">
+											<a href="biscotti1_vs.html">
+												<img src="img/galletaMantequilla_vs.jpg" alt="">
+											</a>
+											<div class="text-content">
+												<h4>Visualizador 3D</h4>
+												<p>En caso de no tener buenas condiciones de luz.</p>
+											</div>	
+										</div>
+                                    </div>
+                                </div>
+								<h4>Precio $2.000</h4>
+                                <p>Galleta de avena con harina integral y una mezcla secreta de frutas y dátiles, con mantequilla de maní, horneadas para que queden crocantes pero suaves por dentro.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="container">
+				<div class="row">
+					
+						<li> <a href="https://www.instagram.com/cecilia.mel.astros" target="_blank" class="instagram-btn">
+					<i class="fa fa-instagram"></i>Siga-nos no Instagram</a></li>
+					
+              
+				</div>
+				
+				<div class="row">
+					
+						<p>Copyright &copy; 2026 Loteamento Lodge</p>
+					
+				 </div>  
+              
+        </div>
+    </footer>
+
+    <script src="./web/js/vendor/jquery-1.11.2.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="./web/js/vendor/bootstrap.min.js"></script>
+
+    <script src="./web/js/plugins.js"></script>
+    <script src="./web/js/main.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+        // navigation click actions
+			
+        $('.scroll-link').on('click', function(event){
+            event.preventDefault();
+            var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);
+        });
+        // scroll to top action
+        $('.scroll-top').on('click', function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop:0}, 'slow');         
+        });
+        // mobile nav toggle
+        $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+    });
+    // scroll function
+    function scrollToID(id, speed){
+        var offSet = 0;
+        var targetOffset = $(id).offset().top - offSet;
+        var mainNav = $('#main-nav');
+        $('html,body').animate({scrollTop:targetOffset}, speed);
+        if (mainNav.hasClass("open")) {
+            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+            mainNav.removeClass("open");
+        }
+    }
+    if (typeof console === "undefined") {
+        console = {
+            log: function() { }
+        };
+    }
+    </script>
+</body>
+</html>
