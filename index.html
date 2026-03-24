@@ -1,200 +1,201 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<!--
-Victory HTML CSS Template
-https://templatemo.com/tm-507-victory
--->
-        <title>Erva Santa</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-		<!-- Add icon library link from Font Awesome 
-		 background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
-		-->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com">
-		<style>
-        /* 2. Style the link to look like a button */
-        .instagram-btn {
-            display: inline-flex;		
-			padding: 10px 20px;
-            align-items: center;
-            color: white;   
-            border-radius: 8px;
-            text-decoration: none;
-            font-family: sans-serif;
-            font-weight: bold;
-            transition: transform 0.2s;
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lands in Brazil</title>
+    <script src="https://www.google.com" async defer></script>
+    <style>
+        /* 1. RESET Y BASE */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+           font-family: 'Segoe UI', sans-serif; 
+            background-color: #f8f9fa; 
+            display: flex; 
+            justify-content: center; 
+            padding: 40px 20px; 
         }
 
-        .instagram-btn i {
-            margin-right: 10px;
-            font-size: 20px;
+        /* 2. CONTENEDOR PRINCIPAL (LANDING) */
+        .wrapper {
+            width: 100%;
+            max-width: 650px; /* Limita el ancho para que no se estire */
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            padding: 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.05); 
         }
 
-        .instagram-btn:hover {
-            transform: scale(1.05); /* Slight pop on hover */
+        /* 3. BLOQUES DE TEXTO */
+        .seccion-texto { 
+            margin-bottom: 30px; 
+            text-align: center; 
+            line-height: 1.6; 
+            color: #444; 
+        }
+        .seccion-texto h1 { color: #222; margin-bottom: 15px; }
+        .seccion-texto p { font-size: 17px; color: #666; }
+
+        /* 4. GALERÍA DE 3 FOTOS (GRID) */
+        .galeria { 
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+            gap: 15px; 
+            margin-bottom: 30px; 
+        }
+        .galeria img { 
+            width: 100%; 
+            height: 180px; 
+            object-fit: cover; 
+            border-radius: 12px; 
+            transition: transform 0.3s;
+        }
+        .galeria img:hover { transform: scale(1.03); }
+
+        /* 5. FORMULARIO */
+        .form-card { 
+            background: #ffffff; 
+            padding: 25px; 
+            border: 1px solid #eee; 
+            border-radius: 15px; 
+        }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 8px; font-weight: 600; color: #555; }
+        input, textarea { 
+            width: 100%; 
+            padding: 12px; 
+            border: 1px solid #ddd; 
+            border-radius: 10px; 
+            font-size: 16px; 
+            background: #fdfdfd;
+        }
+        textarea { height: 120px; resize: none; }
+
+        /* 6. CAPTCHA Y BOTÓN */
+        .g-recaptcha { margin: 20px 0; display: flex; justify-content: center; }
+        .btn-enviar { 
+            width: 100%; 
+            padding: 16px; 
+            background-color: #007bff; 
+            color: white; 
+            border: none; 
+            border-radius: 10px; 
+            font-size: 16px; 
+            font-weight: bold; 
+            cursor: pointer; 
+            transition: background 0.3s;
+        }
+        .btn-enviar:hover { background-color: #0056b3; }
+
+        /* 7. INSTAGRAM */
+        .insta-link { 
+            display: block; 
+            text-align: center; 
+            margin-top: 30px; 
+            color: #e1306c; 
+            text-decoration: none; 
+            font-weight: bold; 
+        }
+
+        /* RESPONSIVO */
+        @media (max-width: 550px) {
+            .galeria { grid-template-columns: 1fr; } /* 1 foto por fila en celular */
+            .galeria img { height: 250px; }
+            .wrapper { padding: 25px; }
         }
     </style>
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-        <link rel="stylesheet" href="./web/css/bootstrap.min.css">
-        <link rel="stylesheet" href="./web/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="./web/css/fontAwesome.css">
-        <link rel="stylesheet" href="./web/css/hero-slider.css">
-        <link rel="stylesheet" href="./web/css/owl-carousel.css">
-        <link rel="stylesheet" href="./web/css/templatemo-style.css">
-
-        <link href="https://fonts.googleapis.com/css?family=Spectral:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-
-        <script src="./web/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    </head>
-
+</head>
 <body>
-  <!--  <div class="header">
-        <div class="container">
-            <a href="#" class="navbar-brand scroll-top">Erva Santa</a>
-            
-        </div>
-        /.container
-    </div>-->
-   
 
+<div class="wrapper">
+    
+    <!-- 1. TEXTO SUPERIOR -->
+    <div class="seccion-texto">
+        <h1>Bem-vindo/Welcome/Bienvenidos</h1>
+        <p>Explore nossos trabalhos recentes e descubra como podemos ajudar você a tornar seu projeto realidade no Brasil.</p>
+    </div>
 
-    <section class="banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3">
-                    <h2>Loteamento Lodge</h2>
-                    <p>Terrenos ecofriendly</p>
-                </div>
+    <!-- 2. GALERÍA DE 3 FOTOS -->
+    <div class="galeria">
+        <img src="./web/img/Localizaciongeneral.webp" alt="Foto 1">
+        <img src="./web/img/Mapaemplazamiento.webp" alt="Foto 2">
+        <img src="./web/img/Perimetro.webp" alt="Foto 3">
+    </div>
+
+    <!-- 3. TEXTO INTERMEDIO -->
+    <div class="seccion-texto">
+        <p>Gostou do que viu? Estamos prontos para ouvir você. Preencha o formulário abaixo e entraremos em contato.</p>
+    </div>
+    <div class="content">
+        <h1>Contact Us</h1>
+        <p>Leave us your details and we will contact you.</p>
+
+        <form id="form-consulta">
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" name="nombre" placeholder="Full Name" required>
             </div>
-        </div>
-    </section>
 
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="example@email.com" required>
+            </div>
 
+            <div class="form-group">
+                <label>Inquiry</label>
+                <textarea name="mensaje" placeholder="¿What do you want to know?" required></textarea>
+            </div>
 
-    <section class="lunch-menu1">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                    <div class="lunch-menu-content">
-                        <div class="row">	
-							<p> <br> </p>
-							<p> <br> </p>
-							<p> <br> </p>
-                            <div class="col-md-5">
-							<h2>Hidrolatos</h2>
-                                <div class="left-image">
-                                    <img src="img/galletaMantequilla_inicial.jpg" alt="">
-									<p> <br> </p>
-									<p> <br> </p>
-									<p> <br> </p>
-                                </div>
-                            </div>
-                            <div class="col-md-7">
-								
-								<div id="owl-lunch1" class="owl-carousel owl-theme">
-                                    <div class="item col-md-12">
-										<div class="food-item">
-											<a href="../ar1/index31.html" onclick="return newWindow31()">
-												<img src="img/galletaMantequilla_ar.jpg" alt="">
-											</a>
-											<div class="text-content">
-												<h4>Experiencia con AR</h4>
-												<p>Asegurate de tener buenas condiciones de luz</p>
-											</div>			
-										</div>
-                                    </div>
-                                    <div class="item col-md-12">
-										<div class="food-item">
-											<a href="biscotti1_vs.html">
-												<img src="img/galletaMantequilla_vs.jpg" alt="">
-											</a>
-											<div class="text-content">
-												<h4>Visualizador 3D</h4>
-												<p>En caso de no tener buenas condiciones de luz.</p>
-											</div>	
-										</div>
-                                    </div>
-                                </div>
-								<h4>Precio $2.000</h4>
-                                <p>Galleta de avena con harina integral y una mezcla secreta de frutas y dátiles, con mantequilla de maní, horneadas para que queden crocantes pero suaves por dentro.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-        </div>
-    </section>
+            <!-- CAPTCHA (Recuerda que dará error hasta que tengas dominio) -->
+            <div class="g-recaptcha" data-sitekey="TU_CLAVE_SITIO_AQUI"></div>
 
+            <button type="submit" class="btn-enviar" id="btn">Send Message</button>
+        </form>
 
+        <a href="https://www.instagram.com/landsinbrazil?igsh=dzEzb3FqYTYycXQ3" target="_blank" rel="noopener noreferrer" class="insta-link">
+            Follow us on Instagram
+        </a>
+    </div>
+</div>
 
-    <footer>
-        <div class="container">
-				<div class="row">
-					
-						<li> <a href="https://www.instagram.com/cecilia.mel.astros" target="_blank" class="instagram-btn">
-					<i class="fa fa-instagram"></i>Siga-nos no Instagram</a></li>
-					
-              
-				</div>
-				
-				<div class="row">
-					
-						<p>Copyright &copy; 2026 Loteamento Lodge</p>
-					
-				 </div>  
-              
-        </div>
-    </footer>
+<script>
+    // Lógica para enviar a Google Sheets
+    const form = document.getElementById('form-consulta');
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwzW33eBiFM-QhlkL1CUscNU2EquLjhLDPPCiCbagxqjHaoQj5kLKfkJ46nV2aqkvbw/exec';
 
-    <script src="./web/js/vendor/jquery-1.11.2.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
-    <script src="./web/js/vendor/bootstrap.min.js"></script>
-
-    <script src="./web/js/plugins.js"></script>
-    <script src="./web/js/main.js"></script>
-
-    <script type="text/javascript">
-    $(document).ready(function() {
-        // navigation click actions
-			
-        $('.scroll-link').on('click', function(event){
-            event.preventDefault();
-            var sectionID = $(this).attr("data-id");
-            scrollToID('#' + sectionID, 750);
-        });
-        // scroll to top action
-        $('.scroll-top').on('click', function(event) {
-            event.preventDefault();
-            $('html, body').animate({scrollTop:0}, 'slow');         
-        });
-        // mobile nav toggle
-        $('#nav-toggle').on('click', function (event) {
-            event.preventDefault();
-            $('#main-nav').toggleClass("open");
-        });
-    });
-    // scroll function
-    function scrollToID(id, speed){
-        var offSet = 0;
-        var targetOffset = $(id).offset().top - offSet;
-        var mainNav = $('#main-nav');
-        $('html,body').animate({scrollTop:targetOffset}, speed);
-        if (mainNav.hasClass("open")) {
-            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
-            mainNav.removeClass("open");
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        /*
+        // Validación básica de Captcha
+        if (grecaptcha.getResponse().length === 0) {
+            alert("Por favor confirma que no eres un robot");
+            return;
         }
-    }
-    if (typeof console === "undefined") {
-        console = {
-            log: function() { }
-        };
-    }
-    </script>
+		*/
+		const formData = new FormData(form);
+    
+		// Capturar datos del navegador
+		formData.append('navegador', navigator.userAgent);
+		formData.append('idioma', navigator.language);
+		formData.append('resolucion', screen.width + 'x' + screen.height);
+
+        const btn = document.getElementById('btn');
+        btn.innerText = "Sending...";
+        btn.disabled = true;
+
+        fetch(scriptURL, { method: 'POST',  mode: 'no-cors', body: formData})
+            .then(res => {
+                alert("Message sent!");
+                form.reset();
+               /* grecaptcha.reset(); */
+                btn.innerText = "Send Message";
+                btn.disabled = false;
+            })
+            .catch(err => alert("Error al enviar: " + err.message));
+    });
+</script>
+
 </body>
 </html>
