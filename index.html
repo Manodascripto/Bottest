@@ -113,8 +113,8 @@
     
     <!-- 1. TEXTO SUPERIOR -->
     <div class="seccion-texto">
-        <h1>Bem-vindo/Welcome/Bienvenidos</h1>
-        <p>Explore nossos trabalhos recentes e descubra como podemos ajudar você a tornar seu projeto realidade no Brasil.</p>
+        <h1>Welcome</h1>
+        <p>Explore our recent work and discover how we can help you bring your project to life in Brazil.</p>
     </div>
 
     <!-- 2. GALERÍA DE 3 FOTOS -->
@@ -126,12 +126,13 @@
 
     <!-- 3. TEXTO INTERMEDIO -->
     <div class="seccion-texto">
-        <p>Gostou do que viu? Estamos prontos para ouvir você. Preencha o formulário abaixo e entraremos em contato.</p>
+        <p>Did you like what you saw? We're ready to hear from you. Fill out the form below and we'll get in touch.</p>
     </div>
     <div class="content">
         <h1>Contact Us</h1>
+		<p><br></p>
         <p>Leave us your details and we will contact you.</p>
-
+		<p><br></p>
         <form id="form-consulta">
             <div class="form-group">
                 <label>Name</label>
@@ -170,7 +171,7 @@
         /*
         // Validación básica de Captcha
         if (grecaptcha.getResponse().length === 0) {
-            alert("Por favor confirma que no eres un robot");
+            alert("Please confirm that you are not a robot");
             return;
         }
 		*/
@@ -193,7 +194,7 @@
                 btn.innerText = "Send Message";
                 btn.disabled = false;
             })
-            .catch(err => alert("Error al enviar: " + err.message));
+            .catch(err => alert("Error sending: " + err.message));
     });
 </script>
 
