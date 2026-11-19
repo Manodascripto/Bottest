@@ -41,6 +41,7 @@
             background: rgba(20, 28, 23, 0.98);
             border-bottom-color: var(--line);
         }
+        header, header nav { color: var(--on-forest); }
         header .wrap {
             display: flex;
             justify-content: space-between;
@@ -59,8 +60,8 @@
         /* Language Selector Styling */
         #language-selector {
             background: transparent;
-            color: var(--ink);
-            border: 1px solid var(--line);
+            color: var(--on-forest);
+            border: 1px solid var(--on-forest);
             padding: 8px 12px;
             border-radius: 4px;
             font-family: "Lato", sans-serif;
@@ -71,7 +72,7 @@
             outline: none;
         }
         #language-selector:hover { border-color: var(--gold); }
-        #language-selector option { background: var(--bg); color: var(--ink); }
+        #language-selector option { background: var(--forest); color: var(--on-forest); }
 
         .btn {
             display: inline-block;
@@ -197,7 +198,11 @@
 
         /* Seções de Conteúdo */
         section { padding: 100px 0; }
-        section.band { background: var(--forest); }
+        section.band { background: var(--forest); color: var(--on-forest); }
+        section.band h2 { color: var(--on-forest); }
+        section.band p.sub { color: var(--on-forest); opacity: .85; }
+        section.band .steps h3 { color: var(--on-forest); }
+        section.band .steps p { color: var(--on-forest); opacity: .82; }
         h2 { font-size: clamp(36px, 4vw, 54px); line-height: 1.1; margin-bottom: 20px; text-align: center; color: var(--ink); }
         p.sub { font-size: 20px; color: var(--muted); max-width: 42em; margin: 0 auto 60px auto; text-align: center; }
 
@@ -296,6 +301,7 @@
         /* Footer */
         footer {
             background: var(--forest);
+            color: var(--on-forest);
             padding: 60px 0;
             text-align: center;
             border-top: 1px solid var(--line);
@@ -307,12 +313,12 @@
             margin-bottom: 30px;
         }
         .social a {
-            color: var(--ink);
+            color: var(--on-forest);
             font-size: 24px;
             transition: var(--transition);
         }
         .social a:hover { color: var(--gold); transform: translateY(-3px); }
-        .copyright { color: var(--muted); font-size: 14px; }
+        .copyright { color: var(--on-forest); opacity: .75; font-size: 14px; }
 
         @media (max-width: 900px) {
             .hero { grid-template-columns: 1fr; padding: 60px 22px; text-align: center; }
